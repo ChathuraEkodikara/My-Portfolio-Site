@@ -126,6 +126,15 @@ a {
   position: relative;
 }
 
+.status-note {
+  margin-top: 1rem;
+  color: var(--neon-yellow);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .hidden {
   display: none !important;
 }
