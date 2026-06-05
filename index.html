@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Chathura Kodikara, an Electronics and Computer Science undergraduate specializing in Embedded Systems, Robotics, IoT, and Industrial Automation.">
+  <meta name="keywords" content="Chathura Kodikara, Embedded Systems, Robotics, Industrial Automation, IoT, Electronics, Computer Science, STM32, ESP32, PLC Programming">
+  <meta name="author" content="Chathura Kodikara">
+  <title>Chathura Kodikara | Robotics & Automation Engineer Portfolio</title>
+  
+  <!-- Custom CSS Design System -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Firebase Compatibility Client SDKs (v10) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="site-logo">
+        Chathura Kodikara
+      </a>
+      
+      <!-- Responsive hamburger toggle -->
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="nav-cta" id="open-login-btn">
+          <i data-lucide="shield-alert"></i> Admin Panel
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO / INTRODUCTION SECTION
+         ========================================================================== -->
+    <section id="hero">
+      <div class="hero-glow-cyan"></div>
+      <div class="hero-glow-blue"></div>
+      <div class="container hero-grid-layout">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Hi, I'm <br><span class="accent-name">Chathura Kodikara</span>
+          </h1>
+          <h2 class="hero-tagline">Electronics & Computer Science Undergraduate</h2>
+          <p class="hero-desc">
+            Building practical hardware-software systems for real-world automation problems. Specializing in Embedded Systems, Robotics, IoT, and Industrial Automation.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              View Projects <i data-lucide="cpu"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me <i data-lucide="mail"></i></a>
+            <a href="#" class="btn btn-secondary" id="download-cv-btn">Download CV <i data-lucide="download"></i></a>
+          </div>
+        </div>
+        
+        <!-- High-Tech Robotics-Themed Profile Photo -->
+        <div class="profile-avatar-container reveal-on-scroll" style="transition-delay: 200ms">
+          <div class="blueprint-grid" style="width: 100%; max-width: 380px; height: 380px; margin: 0 auto;">
+            <div class="blueprint-frame" style="width: 330px; height: 330px; overflow: hidden; padding: 0;">
+              <span class="blueprint-crosshair crosshair-tl"></span>
+              <span class="blueprint-crosshair crosshair-tr"></span>
+              <span class="blueprint-crosshair crosshair-bl"></span>
+              <span class="blueprint-crosshair crosshair-br"></span>
+              <img src="chathura.png" alt="Chathura Kodikara" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px; filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.15)); transition: var(--transition-smooth);">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. ABOUT ME SECTION
+         ========================================================================== -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <h2 class="section-title">
+            <span class="title-bracket">[</span> 01. About Me <span class="title-bracket">]</span>
+          </h2>
+          <div class="section-title-line"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text reveal-on-scroll" style="transition-delay: 100ms">
+            <p>
+              Final-year Electronics and Computer Science undergraduate at the University of Kelaniya with strong interests in embedded systems, robotics, IoT, and industrial automation. Experienced in developing hardware-software solutions involving microcontrollers, sensors, PCB design, and control systems using STM32, ESP32, Arduino, and PLCs. Skilled in system integration, prototyping, troubleshooting, and automation project development.
+            </p>
+            <p>
+              I thrive on engineering robust physical solutions that bridge computational logic and dynamic hardware movement. My design philosophy is built on efficiency, clean system integration, and rigorous testing.
+            </p>
+            
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-num">3.42</div>
+                <div class="stat-label">Academic CGPA</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-num">7+</div>
+                <div class="stat-label">Hardware Projects</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- High-tech engineering graphic grid -->
+          <div class="about-graphic-container reveal-on-scroll" style="transition-delay: 200ms">
+            <div class="blueprint-grid">
+              <div class="blueprint-frame">
+                <span class="blueprint-crosshair crosshair-tl"></span>
+                <span class="blueprint-crosshair crosshair-tr"></span>
+                <span class="blueprint-crosshair crosshair-bl"></span>
+                <span class="blueprint-crosshair crosshair-br"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  <circle cx="12" cy="12" r="10"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <h2 class="section-title">
+            <span class="title-bracket">[</span> 02. Technical Skills <span class="title-bracket">]</span>
+          </h2>
+          <div class="section-title-line"></div>
+        </div>
+        
+        <div class="skills-wrapper">
+          <!-- Category 1: Programming -->
+          <div class="glass-card skills-card reveal-on-scroll">
+            <div class="skills-card-header">
+              <i data-lucide="code-2"></i>
+              <h3 class="skills-card-title">Programming</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">C / C++ / Embedded C</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="90%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">Python / C#</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="80%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">Ladder Logic (Siemens, Mitsubishi)</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">HTML / CSS / JavaScript</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="75%"></div></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Category 2: Embedded Systems -->
+          <div class="glass-card skills-card reveal-on-scroll" style="transition-delay: 100ms">
+            <div class="skills-card-header">
+              <i data-lucide="cpu"></i>
+              <h3 class="skills-card-title">Embedded Systems</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">STM32 (ARM Cortex-M)</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">ESP32 / ESP8266</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="90%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">Raspberry Pi 5 / Arduino</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">PIC16F628A / Microcontrollers</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="75%"></div></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Category 3: Industrial Automation -->
+          <div class="glass-card skills-card reveal-on-scroll" style="transition-delay: 200ms">
+            <div class="skills-card-header">
+              <i data-lucide="settings"></i>
+              <h3 class="skills-card-title">Automation</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">Siemens / Mitsubishi / Xinje PLCs</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="80%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">Pneumatic Systems & Sensors</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">AC Servo & Stepper Motors</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="85%"></div></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill-info">
+                  <span class="skill-name">Brushless Motors / Drivers</span>
+                </div>
+                <div class="skill-bar-outer"><div class="skill-bar-inner" data-percent="80%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Ancillary tools section as flat tags below bars -->
+        <div style="margin-top: 3.5rem;" class="reveal-on-scroll">
+          <h3 style="font-size: 1.1rem; margin-bottom: 1.2rem; text-transform: uppercase; font-family: var(--font-header); letter-spacing: 0.05em; color: var(--text-primary);">
+            Engineering Tools & Platforms
+          </h3>
+          <div class="skills-badge-box">
+            <span class="tech-badge">Altium Designer</span>
+            <span class="tech-badge">EasyEDA</span>
+            <span class="tech-badge">SolidWorks</span>
+            <span class="tech-badge">Fusion 360</span>
+            <span class="tech-badge">Proteus</span>
+            <span class="tech-badge">MATLAB</span>
+            <span class="tech-badge">Webots Simulator</span>
+            <span class="tech-badge">STM32CubeIDE</span>
+            <span class="tech-badge">Arduino IDE</span>
+            <span class="tech-badge">MPLAB XC8</span>
+            <span class="tech-badge">MikroC Pro</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">Git & GitHub</span>
+            <span class="tech-badge">Linux OS</span>
+            <span class="tech-badge">MicroWin</span>
+            <span class="tech-badge">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem;">
+            <h2 class="section-title" style="margin-bottom: 0;">
+              <span class="title-bracket">[</span> 03. Engineering Projects <span class="title-bracket">]</span>
+            </h2>
+            <div class="admin-only hidden reveal-on-scroll" style="transition-delay: 100ms">
+              <button class="btn btn-secondary" id="open-config-btn" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+                <i data-lucide="database"></i> Cloud Config
+              </button>
+            </div>
+          </div>
+          <div class="section-title-line"></div>
+        </div>
+        
+        <div class="projects-grid" id="projects-grid">
+          <!-- dynamic projects and 'Add Project' card injected by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. EXPERIENCE SECTION
+         ========================================================================== -->
+    <section id="experience" class="section-padding">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <h2 class="section-title">
+            <span class="title-bracket">[</span> 04. Experience <span class="title-bracket">]</span>
+          </h2>
+          <div class="section-title-line"></div>
+        </div>
+        <div class="timeline-trace" id="experience-trace">
+          <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. EDUCATION SECTION
+         ========================================================================== -->
+    <section id="education" class="section-padding" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <h2 class="section-title">
+            <span class="title-bracket">[</span> 05. Education <span class="title-bracket">]</span>
+          </h2>
+          <div class="section-title-line"></div>
+        </div>
+        <div class="timeline-trace" id="education-trace">
+          <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section id="achievements" class="section-padding">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <h2 class="section-title">
+            <span class="title-bracket">[</span> 06. Honors & Awards <span class="title-bracket">]</span>
+          </h2>
+          <div class="section-title-line"></div>
+        </div>
+        
+        <div class="achievements-grid" id="achievements-grid">
+          <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. LEADERSHIP & EXTRA-CURRICULARS
+         ========================================================================== -->
+    <section id="leadership" class="section-padding" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <h2 class="section-title">
+            <span class="title-bracket">[</span> 07. Leadership & Activities <span class="title-bracket">]</span>
+          </h2>
+          <div class="section-title-line"></div>
+        </div>
+        
+        <div class="leadership-grid" id="leadership-grid">
+          <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. CERTIFICATIONS SECTION
+         ========================================================================== -->
+    <section id="certifications" class="section-padding">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <h2 class="section-title">
+            <span class="title-bracket">[</span> 08. Certifications <span class="title-bracket">]</span>
+          </h2>
+          <div class="section-title-line"></div>
+        </div>
+        
+        <div class="certs-grid" id="certs-grid">
+          <!-- Injected dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. CONTACT SECTION (DETAILED CONTACT FORM)
+         ========================================================================== -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header-block reveal-on-scroll">
+          <h2 class="section-title">
+            <span class="title-bracket">[</span> 09. Contact Engineering <span class="title-bracket">]</span>
+          </h2>
+          <div class="section-title-line"></div>
+        </div>
+        
+        <div class="contact-layout reveal-on-scroll">
+          <!-- Left Panel: Info -->
+          <div class="contact-info-panel">
+            <h3 style="font-size: 1.3rem; font-family: var(--font-header); color: var(--text-primary); text-transform: uppercase;">
+              Drop me a line
+            </h3>
+            <p class="contact-info-desc">
+              Have an industrial automation requirement, embedded systems prototype, or standard electronic query? Reach out directly via email, phone, or LinkedIn.
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="contact-method-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <div class="contact-method-label">Email Address</div>
+                  <div class="contact-method-value"><a href="mailto:kcek2001@gmail.com">kcek2001@gmail.com</a></div>
+                </div>
+              </div>
+              
+              <div class="contact-method-item">
+                <div class="contact-method-icon"><i data-lucide="linkedin"></i></div>
+                <div>
+                  <div class="contact-method-label">LinkedIn Profile</div>
+                  <div class="contact-method-value"><a href="https://linkedin.com/in/chathura-kodikara" target="_blank">linkedin.com/in/chathura-kodikara</a></div>
+                </div>
+              </div>
+              
+              <div class="contact-method-item">
+                <div class="contact-method-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <div class="contact-method-label">Contact Number</div>
+                  <div class="contact-method-value"><a href="tel:+94712345522">+94 71 234 5522</a></div>
+                </div>
+              </div>
+              
+              <div class="contact-method-item">
+                <div class="contact-method-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <div class="contact-method-label">Physical Location</div>
+                  <div class="contact-method-value">Sri Lanka</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://github.com/kcek2001" target="_blank" class="social-icon" aria-label="GitHub Profile">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://linkedin.com/in/chathura-kodikara" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
+                <i data-lucide="linkedin"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Right Panel: Dynamic Form -->
+          <div class="glass-card contact-form-panel">
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="contact-name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="contact-email" placeholder="john@domain.com" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Detailed Message</label>
+                <textarea class="form-control" id="contact-message" placeholder="Provide system scope, technologies needed, or overall proposal..." required></textarea>
+              </div>
+              
+              <div class="btn-row">
+                <button type="submit" class="btn btn-primary" id="contact-submit-btn">
+                  Dispatch Message <i data-lucide="send"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== */ -->
+  <footer>
+    <div class="container footer-content">
+      <div class="db-status" id="current-db-mode">
+        <span class="status-indicator offline"></span> Synchronizing offline assets...
+      </div>
+      <p class="footer-text">
+        Designed & Built by <span>Chathura Kodikara</span> &copy; 2026. All rights reserved.
+      </p>
+      <button class="btn delete-btn admin-only" id="logout-btn" style="border-radius: 4px; display: none;">
+        <i data-lucide="log-out"></i> Terminal Admin Logout
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       1. MODAL: ADMIN ACCESS LOGIN
+       ========================================================================== -->
+  <div class="modal" id="admin-login-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-login-btn" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      
+      <h3 class="modal-title">
+        <i data-lucide="key-round"></i> Admin Access
+      </h3>
+      
+      <form id="login-form">
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" id="method-passcode" name="login-method" value="passcode" checked>
+            <label for="method-passcode" class="radio-label">Local Bypass</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="method-firebase" name="login-method" value="firebase">
+            <label for="method-firebase" class="radio-label">Firebase Auth</label>
+          </div>
+        </div>
+        
+        <!-- Local Passcode (Default Active) -->
+        <div id="passcode-login-fields">
+          <div class="form-group">
+            <label for="admin-passcode" class="form-label">Developer Passcode</label>
+            <input type="password" class="form-control" id="admin-passcode" placeholder="Enter developer passcode" required>
+            <div class="form-info">Default dev authentication bypass key: <strong>admin123</strong></div>
+          </div>
+        </div>
+        
+        <!-- Firebase Auth (Default Hidden) -->
+        <div id="firebase-login-fields" style="display: none;">
+          <div class="form-group">
+            <label for="admin-email" class="form-label">Firebase Admin Email</label>
+            <input type="email" class="form-control" id="admin-email" placeholder="admin@domain.com">
+          </div>
+          <div class="form-group">
+            <label for="admin-password" class="form-label">Account Password</label>
+            <input type="password" class="form-control" id="admin-password" placeholder="••••••••">
+          </div>
+        </div>
+        
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary">Login As Administrator <i data-lucide="log-in"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. MODAL: DYNAMIC PROJECT MANAGEMENT (ADD & EDIT MULTI-MODE)
+       ========================================================================== -->
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-project-btn" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      
+      <h3 class="modal-title" id="project-modal-title">
+        <i data-lucide="plus-circle"></i> Add Portfolio Project
+      </h3>
+      
+      <form id="project-form">
+        <!-- Hidden input to track Edit vs Add operations -->
+        <input type="hidden" id="proj-id" value="">
+        
+        <div class="form-group">
+          <label for="proj-title" class="form-label">Project Title</label>
+          <input type="text" class="form-control" id="proj-title" placeholder="e.g. Lycan - Battle Robot" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="proj-desc" class="form-label">Technical Description</label>
+          <textarea class="form-control" id="proj-desc" placeholder="Provide a concise description of core system aspects and telemetry..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="proj-tags" class="form-label">Technologies Used (Comma Separated)</label>
+          <input type="text" class="form-control" id="proj-tags" placeholder="e.g. STM32, Embedded C, Altium, PID Control" required>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="proj-github" class="form-label">GitHub Repository Link</label>
+            <input type="url" class="form-control" id="proj-github" placeholder="https://github.com/kcek2001/...">
+          </div>
+          
+          <div class="form-group">
+            <label for="proj-live" class="form-label">Live Video/Demo Link</label>
+            <input type="url" class="form-control" id="proj-live" placeholder="https://youtube.com/...">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="proj-image" class="form-label">Custom Project Image URL (Optional)</label>
+          <input type="url" class="form-control" id="proj-image" placeholder="Leave blank to use a dynamic accent gradient">
+        </div>
+        
+        <div class="form-group">
+          <label for="proj-gradient" class="form-label">Card Accent Accent Colors (If no image is added)</label>
+          <select class="form-control" id="proj-gradient">
+            <option value="0">Electric Blue / Cyber Aqua</option>
+            <option value="3">Cyber Neon Green / Emerald</option>
+            <option value="1">Light Lavender / Pastel Purple</option>
+            <option value="2">Vibrant Purple / Coral Sunset</option>
+            <option value="4">Solar Sun Orange / Lemon Yellow</option>
+          </select>
+        </div>
+        
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary" id="project-submit-btn">
+            Save Project Configuration <i data-lucide="check-square"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       3. MODAL: FIREBASE CLOUD CONNECTOR CONFIGURATION
+       ========================================================================== -->
+  <div class="modal" id="config-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-config-btn" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      
+      <h3 class="modal-title">
+        <i data-lucide="settings-2"></i> Firebase Credentials
+      </h3>
+      
+      <form id="config-form">
+        <div class="form-group">
+          <label for="cfg-apiKey" class="form-label">Web API Key</label>
+          <input type="text" class="form-control" id="cfg-apiKey" required placeholder="AIzaSy...">
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cfg-projectId" class="form-label">Project ID</label>
+            <input type="text" class="form-control" id="cfg-projectId" required placeholder="my-portfolio-123">
+          </div>
+          <div class="form-group">
+            <label for="cfg-authDomain" class="form-label">Auth Domain</label>
+            <input type="text" class="form-control" id="cfg-authDomain" required placeholder="my-portfolio-123.firebaseapp.com">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="cfg-storageBucket" class="form-label">Storage Bucket</label>
+          <input type="text" class="form-control" id="cfg-storageBucket" placeholder="my-portfolio-123.appspot.com">
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cfg-messagingSenderId" class="form-label">Messaging Sender ID</label>
+            <input type="text" class="form-control" id="cfg-messagingSenderId" placeholder="1029384756">
+          </div>
+          <div class="form-group">
+            <label for="cfg-appId" class="form-label">App ID (Web Application)</label>
+            <input type="text" class="form-control" id="cfg-appId" placeholder="1:1029384756:web:abcd1234">
+          </div>
+        </div>
+        
+        <div class="btn-row" style="justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+          <button type="button" class="btn btn-secondary" id="clear-config-btn" style="border-color: #ef4444; color: #ef4444;">
+            Disconnect Firestore Cloud
+          </button>
+          <button type="submit" class="btn btn-primary">Connect & Save Credentials <i data-lucide="wifi"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts Connection Layer -->
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
