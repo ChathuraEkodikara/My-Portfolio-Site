@@ -267,7 +267,7 @@ header.scrolled {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   height: 80px;
 }
@@ -282,6 +282,7 @@ header.scrolled {
   gap: 8px;
   letter-spacing: 0.02em;
   white-space: nowrap;
+  margin-right: 80px;
 }
 
 .logo span.logo-tag {
@@ -769,9 +770,10 @@ header.scrolled {
 
 .skills-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 320px);
+  justify-content: center;
   gap: 2rem;
-}
+} 
 
 .skills-card {
   height: 100%;
@@ -845,12 +847,14 @@ header.scrolled {
   flex-wrap: wrap;
   gap: 0.6rem;
   margin-top: 0.5rem;
+  color: white;
+  font-weight: 700;
 }
 
 .tech-badge {
   background: rgba(7, 14, 32, 0.8);
   border: 1px solid var(--border-color);
-  color: var(--text-secondary);
+  color: white;
   padding: 0.35rem 0.8rem;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -1855,13 +1859,15 @@ select.form-control {
     border-top: 1px solid var(--border-color);
     flex-direction: column;
     padding: 3rem 2rem;
-    gap: 2rem;
+    gap: 1.8rem;
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
     transition: var(--transition-smooth);
     z-index: 95;
     overflow-y: auto;
+    align-items: center;
+    display: flex;
   }
   
   .nav-menu.mobile-active {
